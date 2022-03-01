@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang ="en" dir ="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="davie-burger.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubi" rel="stylesheet">
+    <title>Adding a  text input</title>
+</head>
+
+
+<body>
+    <section id="overlay">
+        <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Log" id="logo">
+        <hr>
+        <form class="form">
+            <h1>Log in to start creating burger!</h1>
+            <label for="username">
+                Username
+            </label>
+            <input type="text" name="username" id="username">
+            <br><br>
+            <label for="user-pw">
+                Password:
+            </label>
+            <input type="password" name="user-pw" id="user-pw">
+            <br><br>
+
+            <label for="patty">
+                What type of protein do you want?
+            </label>
+            <input id="patty" type="text" name="patty" value="beef/chicken">
+            <br><br>
+
+            <label for ="amount">
+                How many patties would you like?
+            </label>
+            <input id="amount" type="number" step="1" name="amount">
+            <br><br>
+
+            <section class="cooked">
+                <label for="doneness">
+                    How do you want your patty cooked?
+                </label>
+                <br>
+                <span>Rare</span>
+                <input id="doneness" name="doneness" type="range" min="0" max="5" step="0.5">
+                <span>Well-done</span>
+            </section>
+            <br><br>
+
+            <section class="toppings">
+                <span>What toppings would you like?</span>
+                <br>
+                <label for="lettuce">
+                    Lettuce
+                </label>
+                <input id="lettuce" type="checkbox" name="topping" value="lettuce">
+                <br>
+                <label for="tomato">
+                    Tomato
+                </label>
+                <input id="tomato" type="checkbox" name="topping" value="tomato">
+                <br>
+                <label for="onion">
+                    Onion
+                </label>
+                <input id="onion" type="checkbox" name="topping" value="onion">
+            </section>
+            <br><br>
+            
+            <section class="cheesy">
+                <span>Would you like to add cheese?</span>
+                <br>
+                <label for="yes">
+                    Yes
+                </label>
+                <input  id="yes" type="radio" name="cheese" value="yes">
+                <label for="no">
+                    No
+                </label>
+                <input id="no" type="radio" name="cheese" value="no">
+            </section>
+            <br><br>
+
+            <section class="bun-type">
+                <label for="bun">
+                    What type of bun would you like?
+                </label>
+                <select id="bun" name="bun">
+                    <option value="sesame">
+                        Sesame
+                    </option>
+                    <option value="potato">
+                        Potato
+                    </option>
+                    <option value="rice">
+                        rice
+                    </option>
+                </select>
+            </section>
+            <br><br>
+
+            <section class="sauce-selection">
+               <label for="sauce">
+                   What sauce would you like?
+               </label> 
+               <input id="sauce" type="text" name="sauce" list="sauces">
+               <datalist id="sauces">
+                   <option value="ketchup">ketchup</option>
+                   <option value="mayo">mayo</option>
+                   <option value="blackpepper">blackpepper</option>
+                   <option value="teriyaki">teriyaki</option>
+               </datalist>
+            </section>
+            <br><br>
+            
+            <section class="extra-info">
+                <label for="extra">
+                    Anything else you want to add?
+                </label>
+                <br>
+                <textarea id="extra" name="extra" rows="3" cols="40">
+                    Make sure you eat a lot!
+                </textarea>    
+            </section>
+            <br><br>
+
+            <section class="submission">
+                <input type="submit">
+            </section>
+
+
+
+
+
+
+
+
+        </form>
+
+    </section>
+
+</body>
+<footer>
+
+</footer>
+</html>
